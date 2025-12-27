@@ -1,0 +1,6 @@
+[
+  { "Name": "Cam1", "Device": "Hikrobot_XXX_001", "InterfaceType": "GigE" },
+  { "Name": "Cam2", "Device": "Hikrobot_XXX_002", "InterfaceType": "GigE" },
+  { "Name": "Cam3", "Device": "USB_Cam_001", "InterfaceType": "USB" },
+  { "Name": "Cam4", "Device": "USB_Cam_002", "InterfaceType": "USB" }
+]

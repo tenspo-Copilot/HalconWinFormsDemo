@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+            <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <NoWarn>0067</NoWarn>
+    <!-- Suppress nullable-flow warnings for .NET Framework 4.8 WinForms to keep build output clean -->
+    <NoWarn>$(NoWarn);8600;8601;8602;8603;8604;8618;8625</NoWarn>
+<OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- NModbus4 的稳定版本在 nuget.org 上仅到 2.1.0（且较老），VS2026/nuget 源可能无法还原 2.2.1。
+         这里改用官方维护的 NModbus 包（API 与本项目使用的 ModbusFactory/IModbusMaster 兼容）。 -->
+    <PackageReference Include="NModbus" Version="3.0.81" />
+      <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+</Project>
