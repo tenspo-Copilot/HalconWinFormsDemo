@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/tenspo-Copilot/HalconWinFormsDemo/refs/heads/main/HalconWinFormsDemo
+https://raw.githubusercontent.com/tenspo-Copilot/HalconWinFormsDemo/refs/heads/main/
